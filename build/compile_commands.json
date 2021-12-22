@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/maverick64/robot_ws/src/openvslam_ros/build/src",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -I/usr/local/include/eigen3 -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/spdlog/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/popl/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/json/include -I/home/maverick64/robot_ws/src/openvslam_ros/src -I/home/maverick64/robot_ws/install/image_transport/include -I/home/maverick64/robot_ws/install/cv_bridge/include -isystem /usr/include/opencv4 -isystem /opt/ros/foxy/include -isystem /usr/include/eigen3   -Wall -Wextra -mtune=native -mtune=native -std=c++17 -g -Og   -o CMakeFiles/run_local_ros2io_rgbd.dir/run_local_ros2io_rgbd.cpp.o -c /home/maverick64/robot_ws/src/openvslam_ros/src/run_local_ros2io_rgbd.cpp",
+  "file": "/home/maverick64/robot_ws/src/openvslam_ros/src/run_local_ros2io_rgbd.cpp"
+},
+{
+  "directory": "/home/maverick64/robot_ws/src/openvslam_ros/build/src",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -I/usr/local/include/eigen3 -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/spdlog/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/popl/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/json/include -I/home/maverick64/robot_ws/src/openvslam_ros/src -I/home/maverick64/robot_ws/install/image_transport/include -I/home/maverick64/robot_ws/install/cv_bridge/include -isystem /usr/include/opencv4 -isystem /opt/ros/foxy/include -isystem /usr/include/eigen3   -Wall -Wextra -mtune=native -mtune=native -std=c++17 -g -Og   -o CMakeFiles/run_local_ros2io_rgbd.dir/openvslam_ros2io.cpp.o -c /home/maverick64/robot_ws/src/openvslam_ros/src/openvslam_ros2io.cpp",
+  "file": "/home/maverick64/robot_ws/src/openvslam_ros/src/openvslam_ros2io.cpp"
+},
+{
+  "directory": "/home/maverick64/robot_ws/src/openvslam_ros/build/src",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -I/usr/local/include/eigen3 -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/spdlog/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/popl/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/json/include -I/home/maverick64/robot_ws/src/openvslam_ros/src -I/home/maverick64/robot_ws/install/image_transport/include -I/home/maverick64/robot_ws/install/cv_bridge/include -isystem /usr/include/opencv4 -isystem /opt/ros/foxy/include -isystem /usr/include/eigen3   -Wall -Wextra -mtune=native -mtune=native -std=c++17 -g -Og   -o CMakeFiles/run_slam_ros2io_rgbd.dir/run_slam_ros2io_rgbd.cpp.o -c /home/maverick64/robot_ws/src/openvslam_ros/src/run_slam_ros2io_rgbd.cpp",
+  "file": "/home/maverick64/robot_ws/src/openvslam_ros/src/run_slam_ros2io_rgbd.cpp"
+},
+{
+  "directory": "/home/maverick64/robot_ws/src/openvslam_ros/build/src",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -I/usr/local/include/eigen3 -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/spdlog/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/popl/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/json/include -I/home/maverick64/robot_ws/src/openvslam_ros/src -I/home/maverick64/robot_ws/install/image_transport/include -I/home/maverick64/robot_ws/install/cv_bridge/include -isystem /usr/include/opencv4 -isystem /opt/ros/foxy/include -isystem /usr/include/eigen3   -Wall -Wextra -mtune=native -mtune=native -std=c++17 -g -Og   -o CMakeFiles/run_slam_ros2io_rgbd.dir/openvslam_ros2io.cpp.o -c /home/maverick64/robot_ws/src/openvslam_ros/src/openvslam_ros2io.cpp",
+  "file": "/home/maverick64/robot_ws/src/openvslam_ros/src/openvslam_ros2io.cpp"
+},
+{
+  "directory": "/home/maverick64/robot_ws/src/openvslam_ros/build/src",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -I/usr/local/include/eigen3 -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/spdlog/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/popl/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/json/include -I/home/maverick64/robot_ws/src/openvslam_ros/src -I/home/maverick64/robot_ws/install/image_transport/include -I/home/maverick64/robot_ws/install/cv_bridge/include -isystem /usr/include/opencv4 -isystem /opt/ros/foxy/include -isystem /usr/include/eigen3   -Wall -Wextra -mtune=native -mtune=native -std=c++17 -g -Og   -o CMakeFiles/run_localization.dir/run_localization.cc.o -c /home/maverick64/robot_ws/src/openvslam_ros/src/run_localization.cc",
+  "file": "/home/maverick64/robot_ws/src/openvslam_ros/src/run_localization.cc"
+},
+{
+  "directory": "/home/maverick64/robot_ws/src/openvslam_ros/build/src",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -I/usr/local/include/eigen3 -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/spdlog/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/popl/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/json/include -I/home/maverick64/robot_ws/src/openvslam_ros/src -I/home/maverick64/robot_ws/install/image_transport/include -I/home/maverick64/robot_ws/install/cv_bridge/include -isystem /usr/include/opencv4 -isystem /opt/ros/foxy/include -isystem /usr/include/eigen3   -Wall -Wextra -mtune=native -mtune=native -std=c++17 -g -Og   -o CMakeFiles/run_localization.dir/openvslam_ros.cc.o -c /home/maverick64/robot_ws/src/openvslam_ros/src/openvslam_ros.cc",
+  "file": "/home/maverick64/robot_ws/src/openvslam_ros/src/openvslam_ros.cc"
+},
+{
+  "directory": "/home/maverick64/robot_ws/src/openvslam_ros/build/src",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -I/usr/local/include/eigen3 -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/spdlog/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/popl/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/json/include -I/home/maverick64/robot_ws/src/openvslam_ros/src -I/home/maverick64/robot_ws/install/image_transport/include -I/home/maverick64/robot_ws/install/cv_bridge/include -isystem /usr/include/opencv4 -isystem /opt/ros/foxy/include -isystem /usr/include/eigen3   -Wall -Wextra -mtune=native -mtune=native -std=c++17 -g -Og   -o CMakeFiles/run_slam.dir/run_slam.cc.o -c /home/maverick64/robot_ws/src/openvslam_ros/src/run_slam.cc",
+  "file": "/home/maverick64/robot_ws/src/openvslam_ros/src/run_slam.cc"
+},
+{
+  "directory": "/home/maverick64/robot_ws/src/openvslam_ros/build/src",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -I/usr/local/include/eigen3 -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/spdlog/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/popl/include -I/home/maverick64/robot_ws/src/openvslam_ros/3rd/json/include -I/home/maverick64/robot_ws/src/openvslam_ros/src -I/home/maverick64/robot_ws/install/image_transport/include -I/home/maverick64/robot_ws/install/cv_bridge/include -isystem /usr/include/opencv4 -isystem /opt/ros/foxy/include -isystem /usr/include/eigen3   -Wall -Wextra -mtune=native -mtune=native -std=c++17 -g -Og   -o CMakeFiles/run_slam.dir/openvslam_ros.cc.o -c /home/maverick64/robot_ws/src/openvslam_ros/src/openvslam_ros.cc",
+  "file": "/home/maverick64/robot_ws/src/openvslam_ros/src/openvslam_ros.cc"
+}
+]

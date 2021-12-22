@@ -1,0 +1,124 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						5
+					]
+				},
+				{
+					"build" : "src",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "openvslam_ros",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "openvslam_ros_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openvslam_ros_uninstall-Debug-dd1fffe5074a5a49983c.json",
+					"name" : "openvslam_ros_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "run_local_ros2io_rgbd::@145eef247bfb46b6828c",
+					"jsonFile" : "target-run_local_ros2io_rgbd-Debug-49c10f7dc401a84d1242.json",
+					"name" : "run_local_ros2io_rgbd",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "run_localization::@145eef247bfb46b6828c",
+					"jsonFile" : "target-run_localization-Debug-1e2c9ee5a6c829a6a39f.json",
+					"name" : "run_localization",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "run_slam::@145eef247bfb46b6828c",
+					"jsonFile" : "target-run_slam-Debug-99c3823e1ffc835378bf.json",
+					"name" : "run_slam",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "run_slam_ros2io_rgbd::@145eef247bfb46b6828c",
+					"jsonFile" : "target-run_slam_ros2io_rgbd-Debug-b2713ce0f84dcb209faa.json",
+					"name" : "run_slam_ros2io_rgbd",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-1a99ee05c6ddd7810e58.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/maverick64/robot_ws/src/openvslam_ros/build",
+		"source" : "/home/maverick64/robot_ws/src/openvslam_ros"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}
