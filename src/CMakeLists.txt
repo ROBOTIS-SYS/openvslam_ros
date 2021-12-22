@@ -15,6 +15,12 @@ list(APPEND EXECUTABLE_TARGETS run_slam)
 add_executable(run_localization run_localization.cc openvslam_ros.cc)
 list(APPEND EXECUTABLE_TARGETS run_localization)
 
+add_executable(run_slam_ros2io_rgbd run_slam_ros2io_rgbd.cpp openvslam_ros2io.cpp)
+list(APPEND EXECUTABLE_TARGETS run_slam_ros2io_rgbd)
+
+add_executable(run_local_ros2io_rgbd run_local_ros2io_rgbd.cpp openvslam_ros2io.cpp)
+list(APPEND EXECUTABLE_TARGETS run_local_ros2io_rgbd)
+
 foreach(EXECUTABLE_TARGET IN LISTS EXECUTABLE_TARGETS)
     # pangolin_viewer is used on a priority basis
     if(USE_PANGOLIN_VIEWER)
