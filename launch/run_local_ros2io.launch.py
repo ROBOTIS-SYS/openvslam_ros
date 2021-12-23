@@ -43,7 +43,7 @@ def generate_launch_description() :
 
         Node(
             package="openvslam_ros",
-            executable="run_localization_ros2io",
+            executable="run_local_ros2io",
             name='run_slam',
             parameters=[
                 {'cfg_file_path'    :   './config/realsense_RGBD.yaml'},
