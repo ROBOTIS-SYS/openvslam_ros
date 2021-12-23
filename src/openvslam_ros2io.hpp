@@ -58,7 +58,7 @@ public:
     // newly added for the ros topic visualization
     std::string mat_type2encoding(int mat_type);
     void publish_debug_img(const std::shared_ptr<openvslam::publish::frame_publisher>& frame_publisher);
-    std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image>> debug_img_pub_;
+    //std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image>> debug_img_pub_;
     const std::shared_ptr<openvslam::publish::frame_publisher> frame_publisher_;
 
 private:

@@ -12,6 +12,8 @@
 #include <opencv2/imgcodecs.hpp>
 #include <Eigen/Geometry>
 
+#include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <fstream>
 #include <spdlog/spdlog.h>
@@ -21,7 +23,7 @@ namespace openvslam_ros {
 system::system()
   : node_(std::make_shared<rclcpp::Node>("run_slam")), custom_qos_(rmw_qos_profile_default),
       pose_pub_(node_->create_publisher<nav_msgs::msg::Odometry>("~/camera_pose", 1)),
-      debug_img_pub_(node_->create_publisher<sensor_msgs::msg::Image>("~/debug_image",1)),
+      //debug_img_pub_(node_->create_publisher<sensor_msgs::msg::Image>("~/debug_image",1)),
       map_to_odom_broadcaster_(std::make_shared<tf2_ros::TransformBroadcaster>(node_)),
       tf_(std::make_unique<tf2_ros::Buffer>(node_->get_clock())),
       transform_listener_(std::make_shared<tf2_ros::TransformListener>(*tf_)) {
@@ -133,6 +135,14 @@ void system::publish_debug_img(const std::shared_ptr<openvslam::publish::frame_p
   cv::Mat img;
 
   img = frame_publisher->draw_frame();
+  // imshow type visualization
+  cv::Mat img_resize;
+  cv::resize(img, img_resize, cv::Size(img.cols/2, img.rows/2));
+
+  cv::imshow("feature frame", img_resize);
+  cv::waitKey(1);
+
+  /* //topic type visualization 활성화시 debug_img_pub_ 선언(헤더), 초기화(생성자) 추가활성화 필요
   msg.header.frame_id = camera_link_;
   msg.height = img.rows;
   msg.width = img.cols;
@@ -142,7 +152,7 @@ void system::publish_debug_img(const std::shared_ptr<openvslam::publish::frame_p
   msg.data.assign(img.datastart,img.dataend);
 
   debug_img_pub_->publish(msg);
-
+  */
 }
 
 
@@ -271,9 +281,6 @@ void system::init_pose_callback(
     if (!SLAM_->relocalize_by_pose_2d(cam_pose_cv, normal_vector)) {
         RCLCPP_ERROR(node_->get_logger(), "Can not set initial pose");
     }
-    //if (!SLAM_->update_pose(cam_pose_cv)) {
-    //    RCLCPP_ERROR(node_->get_logger(), "Can not set initial pose");
-    //}
 }
 
 mono::mono()
