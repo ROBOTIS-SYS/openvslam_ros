@@ -16,7 +16,6 @@ config_parameters = [
     ## openvslam parameter
 
     ]
-1
 def generate_launch_description() :
 
     return LaunchDescription([
@@ -55,6 +54,7 @@ def generate_launch_description() :
             output='screen',
             remappings=[
                 ('camera/depth/image_raw', '/camera/aligned_depth_to_color/image_raw'),
+                ('initalpose', 'correction_pose'),
             ],
         ),
 
@@ -63,4 +63,10 @@ def generate_launch_description() :
             executable="static_transform_publisher",
             arguments = ['0','0','0','0','0','0', 'cam_odom', 'rs_camera_link'],
         ),
+
+        Node(
+            package="tf2_ros",
+            executable="static_transform_publisher",
+            arguments = ['-6.1366', '32.7447', '0.304093', '0.00719071', '0.0515719', '-0.787266', '0.614422', 'map_current', 'cam_map']
+        )
     ])
