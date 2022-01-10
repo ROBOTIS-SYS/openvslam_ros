@@ -58,12 +58,20 @@ def generate_launch_description() :
             ],
         ),
 
+        ## slam result to camera
         Node(
             package="tf2_ros",
             executable="static_transform_publisher",
             arguments = ['0','0','0','0','0','0', 'cam_odom', 'rs_camera_link'],
         ),
+        ## camera to robot center
+        Node(
+            package="tf2_ros",
+            executable="static_transform_publisher",
+            arguments = ['-0.25','0','-0.30','0','0','0', 'cam_odom', 'cam_base_footprint'],
+        ),
 
+        ## map alignment from visual SLAM map to map_current (2D grid map)
         Node(
             package="tf2_ros",
             executable="static_transform_publisher",
