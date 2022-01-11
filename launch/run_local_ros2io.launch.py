@@ -64,6 +64,7 @@ def generate_launch_description() :
             executable="static_transform_publisher",
             arguments = ['0','0','0','0','0','0', 'cam_odom', 'rs_camera_link'],
         ),
+
         ## camera to robot center
         Node(
             package="tf2_ros",
@@ -75,6 +76,6 @@ def generate_launch_description() :
         Node(
             package="tf2_ros",
             executable="static_transform_publisher",
-            arguments = ['-6.1366', '32.7447', '0.304093', '0.00719071', '0.0515719', '-0.787266', '0.614422', 'map_current', 'cam_map']
+            arguments = ['-6.04283', '32.8706', '0.345393', '0.0212048', '0.0407741', '-0.788822', '0.612952', 'map_current', 'cam_map']
         )
     ])
