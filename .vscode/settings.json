@@ -4,5 +4,11 @@
   ],
   "python.analysis.extraPaths": [
     "/opt/ros/foxy/lib/python3.8/site-packages"
-  ]
+  ],
+  "files.associations": {
+    "*.repos": "yaml",
+    "*.world": "xml",
+    "*.xacro": "xml",
+    "chrono": "cpp"
+  }
 }

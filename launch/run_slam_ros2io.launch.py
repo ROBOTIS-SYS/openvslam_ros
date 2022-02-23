@@ -54,7 +54,7 @@ def generate_launch_description() :
             package="tf2_ros",
             executable="static_transform_publisher",
             arguments = ['0','0','0','0','0','0', 'cam_odom', 'camera_link']
-        )
+        ),
 
         Node(
             package="tf2_ros",

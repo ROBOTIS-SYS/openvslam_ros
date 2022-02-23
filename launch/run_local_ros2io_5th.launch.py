@@ -47,7 +47,7 @@ def generate_launch_description() :
             parameters=[
                 {'cfg_file_path'    :   './config/realsense_RGBD.yaml'},
                 {'vocab_file_path'  :   './orb_vocab.fbow'},
-                {'map_db_path'      :   './map-db/6th_floor_office.msg'},
+                {'map_db_path'      :   './map-db/5th_floor.msg'},
                 {'odom_frame'       :   'cam_odom'},
                 {'map_frame'        :   'cam_map'},
             ],
@@ -76,6 +76,6 @@ def generate_launch_description() :
         Node(
             package="tf2_ros",
             executable="static_transform_publisher",
-            arguments = ['-7.73381', '32.96', '0.389587', '0.00563575', '0.0168198', '0.793632', '0.608135', 'map_current', 'cam_map']
+            arguments = ['-2.62432', '1.56752', '-0.436335', '0.00328664', '-0.0128011', '-0.727009', '0.686469', 'map_current', 'cam_map']
         )
     ])
